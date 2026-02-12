@@ -62,10 +62,11 @@ body {
 .btn-download {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  width: 220px;
+  height: 48px;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   color: var(--bg);
   background: var(--accent);
@@ -73,8 +74,10 @@ body {
   border-radius: var(--radius);
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
   transition: background 0.15s ease;
 }
+
 
 .btn-download:hover {
   background: var(--accent-hover);
@@ -86,7 +89,6 @@ body {
   color: var(--text-muted);
 }
 
-/* Sections */
 .section {
   padding: 2rem 0;
   border-bottom: 1px solid var(--border);
@@ -138,7 +140,6 @@ code {
   border-radius: 4px;
 }
 
-/* Table */
 .table-wrap {
   overflow-x: auto;
   margin-bottom: 1rem;
@@ -194,6 +195,18 @@ code {
 
 .license a:hover {
   text-decoration: underline;
+}
+
+.troubleshoot-fig {
+  margin: 1.25rem 0 0;
+}
+
+.troubleshoot-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
 }
 
 /* Footer */

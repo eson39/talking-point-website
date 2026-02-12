@@ -17,16 +17,16 @@
   <header class="header">
     <div class="container">
       <h1 class="logo">Talking Point</h1>
-      <p class="tagline">Meeting notes and bullet points, always on top. Hidden from screen share.</p>
+      <p class="tagline">An invisible teleprompter to keep track of meeting notes and bullet points, always on top. Hidden from screen share.</p>
     </div>
   </header>
 
   <main class="main">
     <section class="hero">
       <div class="container">
-        <p class="hero-desc">Windows only. A small desktop overlay for meeting notes and bullet points. Paste talking points once, then keep the window on top while you present or record. The overlay is excluded from entire-screen sharing (Zoom, Meet, Teams, OBS) so viewers don't see it.</p>
+        <p class="hero-desc">A small desktop overlay for meeting notes and bullet points. Paste talking points once, then keep the window on top while you present or record. The overlay is excluded from entire-screen sharing (Zoom, Meet, Teams, OBS) so viewers don't see it.</p>
         <a href="https://github.com/eson39/talking-point/releases/download/TalkingPoint1.1/Talking.Point.Setup.1.0.0.exe" class="btn-download" download>Download for Windows</a>
-        <p class="requirement">Requires Windows 10 2004 or later (64-bit).</p>
+        <a href="https://github.com/eson39/talking-point/releases/download/TalkingPoint1.1Mac/Talking.Point-1.0.0-arm64.dmg" class="btn-download" download>Download for Mac</a>
       </div>
     </section>
 
@@ -71,13 +71,32 @@
     <section class="section">
       <div class="container">
         <h2>Install &amp; run</h2>
+        <h3>Windows</h3>
         <ol class="install-steps">
-          <li>Download the installer from the button above (e.g. <em>Talking Point Setup 1.0.0.exe</em>).</li>
-          <li>Run the .exe. If Windows shows a SmartScreen prompt, choose “More info” then “Run anyway” if you trust the publisher.</li>
-          <li>Follow the wizard: pick an install location (or keep the default), then finish. The app is installed with a Start Menu shortcut and optional Desktop shortcut.</li>
-          <li>Launch Talking Point from the Start Menu or Desktop. Use <kbd>Ctrl+B</kbd> to show or hide the overlay.</li>
-          <li>Uninstall anytime via Settings → Apps → Talking Point → Uninstall.</li>
+          <li><strong>Windows:</strong> Download the installer from the button above (e.g. <em>Talking Point Setup 1.0.0.exe</em>).</li>
+          <li><strong>Windows:</strong> Run the .exe file. If Windows shows a SmartScreen prompt, click “More info” then “Run anyway” if you trust the publisher.</li>
+          <li><strong>Windows:</strong> Follow the setup wizard: choose an install location (or keep the default), then finish. The app will be installed with a Start Menu shortcut and an optional Desktop shortcut.</li>
+          <li><strong>Windows:</strong> Launch Talking Point from the Start Menu or Desktop. Use <kbd>Ctrl+B</kbd> to show or hide the overlay.</li>
+          <li><strong>Windows:</strong> Uninstall anytime via Settings → Apps → Talking Point → Uninstall.</li>
         </ol>
+        <h3>Mac</h3>
+        <ol class="install-steps">
+          <li><strong>Mac:</strong> Download the <em>.dmg</em> file from the button above (e.g. <em>Talking Point-1.0.0-arm64.dmg</em>).</li>
+          <li><strong>Mac:</strong> Open the downloaded .dmg file, then drag <em>Talking Point</em> into your Applications folder.</li>
+          <li><strong>Mac:</strong> Open Talking Point from Applications. If macOS shows a security warning, go to System Settings → Privacy &amp; Security and click “Open Anyway.”</li>
+          <li><strong>Mac:</strong> You may need to grant Accessibility permissions for global hotkeys. Go to System Settings → Privacy &amp; Security → Accessibility and enable Talking Point.</li>
+          <li><strong>Mac:</strong> To uninstall, delete Talking Point from the Applications folder.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Troubleshooting</h2>
+        <p>If the Talking Point interface is visible on apps like Zoom when you share your screen, enable <strong>Advanced capture with window filter</strong> in your meeting or recording app so it can exclude the overlay from capture.</p>
+        <figure class="troubleshoot-fig">
+          <img src="imgs/troubleshoot.png" alt="Advanced capture with window filter option in screen share settings" class="troubleshoot-img">
+        </figure>
       </div>
     </section>
 
