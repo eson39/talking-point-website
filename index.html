@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talking Point — Overlay for meeting notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Talking Point</h1>
+      <p class="tagline">Meeting notes and bullet points, always on top. Hidden from screen share.</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <p class="hero-desc">Windows only. A small desktop overlay for meeting notes and bullet points. Paste talking points once, then keep the window on top while you present or record. The overlay is excluded from entire-screen sharing (Zoom, Meet, Teams, OBS) so viewers don't see it.</p>
+        <!-- Update href to your release URL, e.g. https://github.com/you/talking-point/releases/latest/download/Talking.Point.Setup.1.0.0.exe -->
+        <a href="downloads/Talking Point Setup 1.0.0.exe" class="btn-download" download>Download for Windows</a>
+        <p class="requirement">Requires Windows 10 2004 or later (64-bit).</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <ul class="feature-list">
+          <li><strong>Transparent overlay</strong> — Frameless, always-on-top window; position and resize as you like.</li>
+          <li><strong>Edit mode</strong> — Toggle with <kbd>Ctrl+E</kbd> to paste and edit bullet points and meeting notes; toggle back to view-only.</li>
+          <li><strong>Persistent notes</strong> — Notes are saved to disk and restored on next launch.</li>
+          <li><strong>Global hotkeys</strong> — Work even when the app is in the background.</li>
+          <li><strong>Hidden from screen share</strong> — Uses the same Windows API as InvisiWind (<code>SetWindowDisplayAffinity</code> / <code>WDA_EXCLUDEFROMCAPTURE</code>). When you share your entire screen, the overlay is excluded from the capture. Requires Windows 10 2004 or later.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Hotkeys</h2>
+        <div class="table-wrap">
+          <table class="hotkey-table">
+            <thead>
+              <tr>
+                <th>Shortcut</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><kbd>Ctrl+B</kbd></td><td>Show or hide the overlay</td></tr>
+              <tr><td><kbd>Ctrl+Shift+D</kbd></td><td>Toggle click-through (clicks pass through overlay to apps behind)</td></tr>
+              <tr><td><kbd>Ctrl+E</kbd></td><td>Toggle edit mode</td></tr>
+              <tr><td><kbd>Ctrl+M</kbd></td><td>Enlarge the window</td></tr>
+              <tr><td><kbd>Ctrl+N</kbd></td><td>Shrink the window</td></tr>
+              <tr><td><kbd>Ctrl+Arrow</kbd></td><td>Move the window</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">In edit mode: <kbd>Esc</kbd> to save and switch back to view mode. To edit notes while click-through is on, press <kbd>Ctrl+Shift+D</kbd> first to turn it off.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Install &amp; run</h2>
+        <ol class="install-steps">
+          <li>Download the installer from the button above (e.g. <em>Talking Point Setup 1.0.0.exe</em>).</li>
+          <li>Run the .exe. If Windows shows a SmartScreen prompt, choose “More info” then “Run anyway” if you trust the publisher.</li>
+          <li>Follow the wizard: pick an install location (or keep the default), then finish. The app is installed with a Start Menu shortcut and optional Desktop shortcut.</li>
+          <li>Launch Talking Point from the Start Menu or Desktop. Use <kbd>Ctrl+B</kbd> to show or hide the overlay.</li>
+          <li>Uninstall anytime via Settings → Apps → Talking Point → Uninstall.</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Talking Point. MIT License.</p>
+    </div>
+  </footer>
+</body>
+</html>

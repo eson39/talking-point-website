@@ -1,0 +1,209 @@
+:root {
+  --bg: #0f0f12;
+  --surface: #18181c;
+  --border: #2a2a30;
+  --text: #e8e8ec;
+  --text-muted: #9a9aa6;
+  --accent: #7c9cf8;
+  --accent-hover: #9ab4fa;
+  --green: #7ee787;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.header {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* Hero + download */
+.hero {
+  padding: 2.5rem 0;
+}
+
+.hero-desc {
+  margin: 0 0 1.5rem;
+  color: var(--text-muted);
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-download:hover {
+  background: var(--accent-hover);
+}
+
+.requirement {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Sections */
+.section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section-muted {
+  background: var(--surface);
+}
+
+.section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.feature-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.75rem;
+}
+
+.feature-list li:last-child {
+  margin-bottom: 0;
+}
+
+kbd, code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}
+
+kbd {
+  padding: 0.15em 0.4em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+code {
+  color: var(--green);
+  background: rgba(126, 231, 135, 0.08);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.hotkey-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.hotkey-table th,
+.hotkey-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.hotkey-table th {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hotkey-table td:first-child {
+  white-space: nowrap;
+}
+
+.note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Install steps */
+.install-steps {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.install-steps li {
+  margin-bottom: 0.5rem;
+}
+
+.license {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+}
+
+.license a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.license a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
